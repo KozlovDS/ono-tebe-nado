@@ -5,7 +5,6 @@
   align-items: center;
   padding: 92px 50px;
   font-size: 18px;
-  text-underline-offset: 4px;
 }
 
 .header__links-list {
@@ -30,18 +29,14 @@
   justify-self: end;
 }
 
-.header__address a {
-  display: block;
-  text-underline-offset: 4px;
-}
-
+/* Входная секция */
 .cover {
   position: relative;
   z-index: 1;
+  margin-bottom: 180px;
   padding: 50px;
   color: #FFF;
   background: url('../images/cover.jpg') center center / cover no-repeat;
-  margin-bottom: 180px;
 }
 
 .cover__title {
@@ -106,14 +101,10 @@
 
 /* блок карточек */
 .lots {
-  padding: 0 50px;
   margin-bottom: 182px;
 }
 
 .lots__heading {
-  font-size: 40px;
-  font-weight: 700;
-  text-transform: uppercase;
   margin-bottom: 27px;
   margin-left: 40px;
 }
@@ -122,8 +113,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
   gap: 25px;
-  list-style: none;
   margin-bottom: 30px;
+  list-style: none;
 }
 
 .lots__card-list-item {
@@ -139,25 +130,22 @@
 .card {
   position: relative;
   z-index: 1;
-  color: #fff;
-  line-height: 1.2;
-  padding: 50px 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  padding: 50px 40px;
+  color: #fff;
+  line-height: 1.2;
 }
 
 .card__title {
-  font-size: 22px;
   font-weight: 700;
+  font-size: 22px;
   text-decoration-line: underline;
-  text-transform: uppercase;
-  text-underline-offset: 4px;
   text-decoration-thickness: 1px;
+  text-transform: uppercase;
 }
-
-.card__text {}
 
 .card_type_film {
   background: url('../images/card-lot-01.jpg') 100% / cover no-repeat;
@@ -175,6 +163,73 @@
 
 .lots__look-more-link {
   margin-left: 40px;
-  text-underline-offset: 4px;
+}
 
+/* Блок об аукционе */
+.about {
+  display: grid;
+  grid-template-columns: 430px 1fr;
+  gap: 25px;
+  margin-bottom: 182px;
+}
+
+.about__column {
+  justify-self: center;
+}
+
+.about__logo {
+  display: inline-flex;
+  margin: auto;
+  border-radius: 50%;
+  padding: 63px 46px;
+  background-color: #000;
+}
+
+.about__logo-image {
+  width: 148px;
+  height: 114px;
+}
+
+.about__title {
+  margin-top: 101px;
+  margin-bottom: 100px;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  line-height: 1.16;
+}
+
+/* Подвал */
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 90px;
+  padding: 0 50px;
+  font-size: 18px;
+}
+
+.footer__menu-list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  list-style: none;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+.footer__social-list {
+  display: flex;
+  justify-content: flex-end;
+  gap: 48px;
+  list-style: none;
+}
+
+.footer__social-icon {
+  width: 48px;
+  height: 48px;
 }

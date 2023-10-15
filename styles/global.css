@@ -29,10 +29,21 @@ blockquote {
 
 a {
   color: inherit;
+  text-underline-offset: 4px;
 }
 
 img {
   width: 100%;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+section {
+  padding: 0 50px;
 }
 
 .overlay {
@@ -46,8 +57,13 @@ img {
 
 .address {
   max-width: 240px;
-  line-height: 1.35;
   font-style: normal;
+  line-height: 1.35;
+}
+
+.address a {
+  display: block;
+  text-underline-offset: 4px;
 }
 
 .no-letter-spacing {
