@@ -25,6 +25,11 @@
   text-decoration: none;
 }
 
+.header__logo-image {
+  width: 148px;
+  height: 105px;
+}
+
 .header__address {
   justify-self: end;
 }
@@ -58,7 +63,7 @@
 
 .aligned-text_center {
   align-self: center;
-  margin-left: -62px;
+  margin-right: 60px;
   line-height: 1;
   word-spacing: -25px;
 }
@@ -82,11 +87,7 @@
   font-size: 22px;
   line-height: 1.273;
   text-transform: uppercase;
-  word-spacing: 17px;
-}
-
-.cover__description-text-ws {
-  word-spacing: 22px;
+  word-spacing: 18px;
 }
 
 .bet-button {
@@ -117,10 +118,6 @@
   list-style: none;
 }
 
-.lots__card-list-item {
-  min-height: 450px;
-}
-
 .card-link {
   display: block;
   height: 100%;
@@ -133,7 +130,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
+  min-height: 450px;
   padding: 50px 40px;
   color: #fff;
   line-height: 1.2;
