@@ -56,21 +56,6 @@ section {
   transition: background-color 0.3s ease 0s;
 }
 
-.address {
-  max-width: 240px;
-  font-style: normal;
-  line-height: 1.35;
-}
-
-.address a {
-  display: block;
-  text-underline-offset: 4px;
-}
-
-.address a:hover {
-  text-decoration: none;
-}
-
 .no-letter-spacing {
   letter-spacing: normal;
 }

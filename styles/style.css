@@ -30,9 +30,25 @@
   height: 105px;
 }
 
+.address {
+  max-width: 240px;
+  font-style: normal;
+  line-height: 1.35;
+}
+
+.address__link {
+  display: block;
+  text-underline-offset: 4px;
+}
+
+.address__link:hover {
+  text-decoration: none;
+}
+
 .header__address {
   justify-self: end;
 }
+
 
 /* Входная секция */
 .cover {
@@ -97,13 +113,13 @@
   font-size: 22px;
   text-transform: uppercase;
   background-color: transparent;
-  cursor: pointer;
   transition: all 0.3s ease 0s;
+  cursor: pointer;
 }
 
 .bet-button:hover {
-  background-color: #fff;
   color: #000;
+  background-color: #fff;
 }
 
 /* блок карточек */
@@ -180,6 +196,7 @@
 .about {
   display: grid;
   grid-template-columns: 430px 1fr;
+  align-items: start;
   gap: 25px;
   margin-bottom: 182px;
 }
@@ -190,7 +207,6 @@
 
 .about__logo {
   display: inline-flex;
-  margin: auto;
   border-radius: 50%;
   padding: 63px 46px;
   background-color: #000;
